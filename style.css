@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    background-image: url("images/5.png");
+    background-repeat: no-repeat;
+    background-position: -100px 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+main > nav{
+    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    height: 80px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main > nav > h1{
+    font-weight: 900;
+    color: #fff;
+}
+
+main > nav > ul{
+    display: flex;
+    column-gap: 20px;
+}
+
+main > nav > ul > li{
+    list-style: none;
+}
+
+main > nav > ul > li:hover{
+    text-decoration: 2px underline #fff;
+}
+
+main > nav > ul > li > a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+main > .content{
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main > .content > h1{
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 0px;
+    transform: translate(500px,45%);
+    z-index: 14;
+    font-size: 100px;
+    color: #fff;
+}
+
+main > .content > div{
+    mix-blend-mode: screen;
+    z-index: 20; /*12*/
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    
+}
+
+main > .content > div > img{
+   width: 800px;
+   height: 800px;
+   object-fit: cover;
+   object-position: -740px -20px;
+}
+
+main > .content > a:nth-of-type(1){
+    position: relative;
+    z-index: 14;
+    display: block;
+    color: #311f62;
+    margin-bottom: 350px;
+    padding: 0.6rem 1.8rem;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+main .btnfloatmove{
+    position: absolute;
+    bottom: 350px;
+    z-index: 30;
+    opacity: 0;
+    display: block;
+    padding: 0.6rem 1.8rem;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: red;
+}
+
+.mountainleft{
+    position: relative;
+    position: absolute;
+    z-index: 15;
+    width: 100%;
+    height: 100%;
+}
+
+
+.mountainleft > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mountainleft::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(180deg,transparent,black);
+}
+
+.backmountain{
+    position: relative;
+    position: absolute;
+    z-index: 13;
+    width: 100%;
+    height: 100%;
+}
+
+.backmountain > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.star{
+    position: relative;
+    position: absolute;
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+}
+
+.star > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sec1{
+    padding: 50px 60px;
+    background-color: #020102;
+}
+
+.sec1 > h1{
+    color: #fff;
+    font-size: 45px;
+}
+
+.sec1 > .boxtext > p{
+    color: #fff;
+    line-height: 1.8rem;
+}
